@@ -1,0 +1,44 @@
+//
+//  Fact_Database.swift
+//  iStory
+//
+//  Created by Boulanger Tim on 03/11/2020.
+//
+
+import SwiftUI
+
+var histoires : [Fait] = [
+    Fait(intID: 0, faitext: "Le 12 Janvier 2010, Haïti fait l'objet d'un tremblement de terre. ", date: "12-01", faitdetail: "Le 12 Janvier 2010, Haïti fait l'objet d'un tremblement de terre qui fera plus de 230 000 morts.", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwivrZaN__fsAhUM1xoKHYpUAxAQFjAAegQIAxAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FS%25C3%25A9isme_de_2010_en_Ha%25C3%25AFti&usg=AOvVaw1-enfpMq8xTtvQ2IggILRy"),
+    
+    Fait(intID: 1, faitext: "Le terrible séisme du 11 mars 2011, au Japon, suivi d'une part d'un tsunami faisant plus de 10 000 morts.", date: "11-03", faitdetail: "D'autre part une catastrophe nucléaire survien dont les graves conséquences ne seront pas connues avant plusieurs années.", fav: true, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjb7ciW__fsAhWPxIUKHd3hCBIQFjAAegQIARAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FS%25C3%25A9isme_de_2011_de_la_c%25C3%25B4te_Pacifique_du_T%25C5%258Dhoku&usg=AOvVaw1J_aooCtHDqF60-VFVaPXx"),
+    
+    Fait(intID: 2, faitext: "Le 4 novembre 1848 : promulgation de la Constitution de la deuxième République française.", date: "04-11", faitdetail: "1848 : promulgation de la Constitution de la deuxième République française.", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi3itSl__fsAhVrxYUKHSRnBDQQFjACegQIBRAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FConstitution_fran%25C3%25A7aise_du_4_novembre_1848&usg=AOvVaw0CxQ16GS-PP1xQH-x8lfSQ"),
+    
+    Fait(intID: 3, faitext: "5 novembre 1922 : Découverte du tombeau de Toutânkhamon", date: "05-11", faitdetail: "Le 5 novembre 1922, Howard Carter découvre le tombeau du pharaon Toutânkhamon...", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjNw8u3__fsAhXE4IUKHSlSC0sQFjABegQIBhAC&url=https%3A%2F%2Fwww.herodote.net%2F5_novembre_1922-evenement--13600000.php&usg=AOvVaw10-QbUFN0a03hxAAB7wBBP"),
+    
+    Fait(intID: 4, faitext: "Le 6 novembre 355 : à Milan, Constance II nomme Julien César.", date: "06-11", faitdetail: "6 novembre : Julien, le frère de Gallus, est fait César par son cousin Constance II à Milan et épouse la fille de ce dernier, Hélène", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjWiYbD__fsAhULzhoKHdOEDacQFjAEegQIARAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2F355&usg=AOvVaw2ShQA8IsSbpLbBqsPggIhK"),
+    
+    Fait(intID: 5, faitext: "Le 7 novembre 1917 : révolution d'Octobre en Russie.", date: "07-11", faitdetail: "1917 : révolution d'Octobre en Russie.....", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi2yPbd__fsAhUJx4UKHSnbAdUQFjAAegQIAxAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FR%25C3%25A9volution_d%2527Octobre&usg=AOvVaw0swVQxpxpUBs_nqUb8DuAC"),
+    
+    Fait(intID: 6, faitext: "Le 8 novembre 1960 : élection de John Fitzgerald Kennedy à la Présidence des États-Unis.", date: "08-11", faitdetail: "1960 : élection de John Fitzgerald Kennedy à la Présidence des États-Unis...", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi6gbXq__fsAhWU3YUKHZhNCo8QFjABegQIAxAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2F%25C3%2589lection_pr%25C3%25A9sidentielle_am%25C3%25A9ricaine_de_1960&usg=AOvVaw2JG-jRPN-4ww4NEbifzoxk"),
+    
+    Fait(intID: 7, faitext: "Le 9 novembre 1938 : nuit de Cristal.", date: "09-11", faitdetail: "La nuit de Cristal (en allemand: Reichskristallnacht) est le pogrom contre les Juifs du Troisième Reich qui se déroula dans la nuit du 9 au 10 novembre 1938 et dans la journée qui suivit. ...", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi3iuvz__fsAhWI4IUKHXJLBvcQFjACegQIAxAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FNuit_de_Cristal&usg=AOvVaw3HFlgqDZ3RIe89MX_pLYJP"),
+    
+    Fait(intID: 8, faitext: "Le 10 novembre 1859 : traité de Zurich.", date: "10-11", faitdetail: "Le traité de Zurich met fin au conflit qui oppose la coalition franco-sarde à l’Autriche, le traité est négocié et signé entre le 10 et le 11 novembre 1859 : les Autrichiens cèdent la Lombardie à la France qui la cède au royaume de Sardaigne alors que l’Autriche conserve la Vénétie et les forteresses de Mantoue et Peschiera. Les souverains de Modène, Parme et Toscane retrouvent leurs États ainsi que les gouverneurs pontificaux, Bologne. Tous les États italiens, la Vénétie incluse, encore autrichienne, doivent s’unir en une confédération italienne présidée par le pape.", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiurbK5_ffsAhUMxoUKHUBVBL8QFjAAegQIBBAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FTrait%25C3%25A9_de_Zurich&usg=AOvVaw3LkxofL-mVtwiSCjq2T72V"),
+    
+    Fait(intID: 9, faitext: "Le 11 novembre signature de l'armistice de 1918, fin de la Première Guerre mondiale,", date: "11-11", faitdetail: "L’armistice de 1918, signé le 11 novembre 1918 à 5 h 152,3, met provisoirement fin aux combats de la Première Guerre mondiale (1914-1918), reconnaîssant de facto la victoire des Alliés et la défaite de l'Allemagne, mais il ne s'agit pas d'une capitulation au sens propre, cet armistice étant prévu pour durer 33 jours, puis il a ensuite été renouvelé", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjkqr6BgPjsAhUuzIUKHUZ_ANYQFjAFegQIAxAC&url=https%3A%2F%2Fwww.linternaute.fr%2Factualite%2Fguide-histoire%2F1749725-armistice-1918-un-evenement-cle-de-l-histoire-tout-savoir%2F&usg=AOvVaw3s2b_tnEJnt9K7Ie8-6DiI"),
+    
+    Fait(intID: 10, faitext: "Le 12 novembre 1918 : abdication des souverrains perdant la première guerre mondial ", date: "12-11", faitdetail: "1918 :l empereur Charles Ier d Autriche renonce à l exercice du pouvoir.la république d Autriche allemande est proclamé abdication du grand-duc Ernest-Louis de Hesse, du prince Léopold IV de Lippe, du duc Joachim-Ernest d Anhalt (proclamée par le priince Aribert d Anhalt, régent du duché)", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiPn8KTgPjsAhWNx4UKHdrOCU0QFjACegQIAhAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FR%25C3%25A9publique_d%2527Autriche_allemande&usg=AOvVaw0eVsdnnacKSz9H32XGXjqr"),
+    
+    Fait(intID: 11, faitext: "les attentats terroristes de Paris dans la nuit du 13 novembre 2015 ", date: "13-11", faitdetail: "Plusieurs actes terroristes simultanés font au moins 127 morts, dont 82 dans la salle de spectacle du Bataclan ou le groupe de hard rock américain 'Eagles of Death Metal' donnait un concert.", fav: true, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiAxOukgPjsAhUKhRoKHTstBlgQFjACegQIAxAC&url=https%3A%2F%2Fwww.gouvernement.fr%2Fattentats-de-paris-la-france-en-guerre-3281&usg=AOvVaw1yBkSxS_OWuE7jTbvftcmo"),
+    
+    Fait(intID: 12, faitext: "Le 14 novembre 1990 :traité germano-polonais garantissant le respect de la frontière germano-polonaise formée par la ligne Oder-Neisse", date: "14-11", faitdetail: "1990 :traité germano-polonais garantissant le respect de la frontière germano-polonaise formée par la ligne Oder-Neisse", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiRl4i5gPjsAhWPxIUKHd3hCBIQFjAAegQIAhAC&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FTrait%25C3%25A9_sur_la_fronti%25C3%25A8re_germano-polonaise&usg=AOvVaw2D5YYdhq8SNUmgDO-YUeTO"),
+    
+    Fait(intID: 13, faitext: "Le 15 novembre 1971 : lancement du Micro Processeur Intel 4004.", date: "15-11", faitdetail: "1971 : lancement du Micro Processeur Intel 4004....", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjUlqHEgPjsAhVOPBoKHW2-CV8QFjABegQIAhAC&url=https%3A%2F%2Fwww.herodote.net%2F15_novembre_1971-evenement-19711115.php&usg=AOvVaw16CyekJYBS6DWmsMe4XBid"),
+    
+    Fait(intID: 14, faitext: "Le 16 novembre le 16 novembre 1945 : création de l'UNESCO.", date: "16-11", faitdetail: "L'Organisation des Nations unies pour l'éducation, la science et la culture : Elle a pour objectif selon son acte constitutif de « contribuer au maintien de la paix et de la sécurité en resserrant, par l’éducation, la science et la culture", fav: false, link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj5yvjcgPjsAhVlzoUKHWrOCgAQFjAAegQIARAC&url=https%3A%2F%2Fwww.humanite.fr%2F16-novembre-1945-lunesco-est-creee-sur-les-decombres-de-la-guerre-589598&usg=AOvVaw0bwZNmopmMnxQpSP9s_IP8"),
+    
+    
+    
+    
+]
